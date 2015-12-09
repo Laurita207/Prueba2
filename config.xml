@@ -64,6 +64,7 @@
 	
 	<gap:plugin name="org.apache.cordova.geolocation" />
 	<plugin name="com.alexdeveloper81.speech.speechrecognition" spec="0.1.0" source="pgb" />
+	<plugin name="org.tt.plugin.tts" spec="1" source="pgb" />
 	
 
     <!-- Define app icon for each platform. -->

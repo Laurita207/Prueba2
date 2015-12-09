@@ -12,7 +12,12 @@
 	<script src="./js/jqueryui.js"></script>
 	<script src="./js/general.js"></script>
 	
+	<script type="text/javascript" charset="utf-8" src="./js/phonegap.{ver}.js"></script>
+	<script type="text/javascript" charset="utf-8" src="./js/tts.js"></script>
+	
 	<script type="text/javascript">
+	var win;
+	var fail;
 	document.addEventListener("deviceready", function(){ 
     var recognition = new SpeechRecognition();
     recognition.onresult = function(event) {
@@ -29,6 +34,7 @@
 	 <form action="http://www.example.com/search">
     <input type="search" id="q" name="q" size=60>
     <input type="button" value="Click to Speak" onclick="recognition.start()">
+	<input type="button" value="Click to Listen" onclick="window.plugins.tts.speak('The TTS service is ready', win, fail)">
   </form>
 	
 </body>
